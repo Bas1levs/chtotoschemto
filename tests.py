@@ -12,3 +12,6 @@ async def test_start():
     message.from_user.first_name = 'Vasia'
     await main_bot_tg.command_start(message)
     bot.send_message.assert_called_with(3, 'Hello Vasia')
+    
+@pytest.mark.asyncio
+async def test_
